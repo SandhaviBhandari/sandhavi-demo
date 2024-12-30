@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Partition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+.nav{
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 200px;
+    margin-left: auto;
+    /* margin: 0 auto; */
+  
+
+}
+
+        body {
+            font-family: Arial, sans-serif;
+          
+            
+            height: 100vh;
+            background-color: rgb(109, 128, 0);
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 30px;
+        }
+        .left, .right {
+            flex: 1;
+            background: rgb(82, 135, 58);
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+          
+        }
+        .left h2, .right h2 {
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px;
+            background: green;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width:80px;
+        }
+        /* button:hover {
+            background: #0056b3; */
+        }
+        .post {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logedin"></div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h2>Add Post</h2>
+            <form method="POST" action="">
+                <label for="title">Title:</label>
+        <input type="title" id="Title" name="Title" required>
+        <label for ="description">Description:</label>
+       <textarea id="description" name "decription" rows="20" cols="30"></textarea>
+       
+
+
+                <button type="submit">Add Post</button>
+            </form>
+        </div>
+        <div class="right">
+            <h2>My Posts</h2>
+           
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+   
+    color: white;
+    height: 40px;
+    width: 200px;
+    margin-left: auto;
+    /* margin: 0 auto; */
+
+
+}
+
+body {
+    font-family: Roboto;
+
+
+    height: 100vh;
+    background-color: rgb(109, 128, 0);
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+.left,
+.right {
+    flex: 1;
+    background: rgb(82, 135, 58);
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+}
+
+.left h2,
+.right h2 {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 80px;
+}
+
+
+
+.post {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}

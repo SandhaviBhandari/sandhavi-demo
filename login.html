@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            width: 980px;
+            margin: 0 auto;
+            display:block;
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+        input {
+            margin: 1rem 0;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div>
+        <form action="login.php" method="POST">
+        <h3>Login</h3>
+        <input type="text" name="name" placeholder="username"/>
+        <input type="password" name="password" placeholder="password"/>
+        <input type="submit" value="Login">
+    </form>
+   </div>
+</body>
+</html>
