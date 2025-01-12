@@ -28,14 +28,14 @@ if (($result->num_rows) > 0) {
 
     $_SESSION['username'] = $name; // setting the session variable it is a global variable
     $user_details = $result->fetch_assoc();
-    $SESSION['user_id'] = $user_details["id"];
+    $_SESSION['user_id'] = $user_details["id"];
     
 
     // Success: Redirect to a dashboard or welcome page
     echo "<script>
             alert('Login successful!');
           </script>";
-       header("Location:dashboard.php");      
+       header("Location:posts.php");      
 } else {
     // Failure: Show error message
     echo "<script>
